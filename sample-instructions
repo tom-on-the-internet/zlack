@@ -1,0 +1,27 @@
+USER `Mike`
+WAIT 1000
+TYPING `Gordon` 2000
+SAY `Gordon` `Hey! Thanks for checking out Zlak.`
+WAIT 1000
+TYPING `Gordon` 2000
+SAY `Gordon` `I'm now going to wait for YOU to type something.`
+WAIT USER
+WAIT 1000
+TYPING `Gordon` 2000
+WAIT 1000
+TYPING `Gordon` 2000
+SAY `Gordon` `Ok. Seems like you are getting the hang of this. Ok. Good! But I can do something different too.`
+WAIT 1000
+TYPING `Gordon` 2000
+SAY `Gordon` `Ok... one sec...`
+WAIT 3000
+NARRATE `Look at this! Isn't this cool? This is narration.` 8000
+WAIT 1000
+TYPING `Gordon` 2000
+SAY `Gordon` `Did you have fun?`
+WAIT USER
+WAIT 2000
+TYPING `Gordon` 2000
+WAIT 2000
+TYPING `Gordon` 2000
+SAY `Gordon` `Well. I don't know what you wrote. But I hope you're happy.`

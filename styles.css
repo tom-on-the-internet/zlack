@@ -18,20 +18,28 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding: 1%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
   font-family: "Luckiest Guy", cursive;
   font-size: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 2%;
   margin-bottom: 1%;
+  cursor: pointer;
 }
 
 main {
 }
 
 #messages {
+  position: relative;
   min-height: 68vh;
+  height: 68vh;
   padding: 1em;
   background-color: #202023;
   border-radius: 5px;
@@ -41,10 +49,28 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   font-size: 1.2em;
+  overflow: hidden;
 }
 
 .message {
   margin-bottom: 20px;
+}
+
+.typing-indicator {
+  position: absolute;
+  bottom: 5px;
+  font-size: 0.7em;
+}
+
+.narration {
+  font-family: "Luckiest Guy", cursive;
+  color: #ffcc00;
+  text-shadow: 3px 3px 1px grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
 }
 
 .author {
@@ -67,8 +93,12 @@ input {
 }
 
 footer {
-  /* min-height: 10vh; */
   margin-top: auto;
-  font-size: 0.7em;
-  color: pink;
+  font-size: 1em;
+  color: #fff;
+}
+
+.zlak {
+  font-size: 1.3em;
+  font-family: "Luckiest Guy", cursive;
 }
