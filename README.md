@@ -25,6 +25,7 @@ USER `username`          // set the name of the user, defaults to Tom if not cal
 WAIT 2000                // waits for the number of milliseconds, in this case 2000 (2 seconds)
 WAIT USER                // waits until the user sends a message
 TYPING `username` 2000   // show a typing message, in this case "username is typing..." for 2 seconds
+SAY `username` `message` // show a message from a user
 NARRATE `message` 5000   // show a narration message, in this case it show "narrate" for 5 seconds
 ```
 
