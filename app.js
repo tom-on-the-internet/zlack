@@ -127,6 +127,10 @@ function getInstructions(file) {
 }
 
 function makeInstruction(line) {
+  if (line.startsWith("#")) {
+    return makeCommentInstruction(line);
+  }
+
   if (line.startsWith("USER")) {
     return makeUserInstruction(line);
   }
@@ -185,6 +189,14 @@ function makeSayInstruction(line) {
     return new Promise((resolve, reject) => {
       const [author, message] = extractMessage(line);
       sendMessage(author, message);
+      resolve(line);
+    });
+  };
+}
+
+function makeCommentInstruction(line) {
+  return () => {
+    return new Promise((resolve, reject) => {
       resolve(line);
     });
   };
